@@ -8,19 +8,16 @@
 
 - 后端
   - [组件](zh-cn/houduan/package)
+  - [开发](zh-cn/houduan/dev)
 
 - 前端
-  - [开发](zh-cn/qianduan/intro)
+  - [开发](zh-cn/qianduan/dev)
 
 
 - 其他
   - [部署](zh-cn/qita/install)
+  - [未来](zh-cn/qita/feature)
 
 
-* 
-* [安装](zh-cn/start/install.md)
-* [快速开发](zh-cn/start/fastDev.md)
 
-
-* [鸣谢](zh-cn/thank)
 
