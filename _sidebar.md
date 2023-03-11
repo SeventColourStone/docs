@@ -1,6 +1,25 @@
 <!-- docs/_sidebar.md -->
 
+- 开始
+  - [介绍](zh-cn/start/intro)
+  - [鸣谢](zh-cn/start/thank)
+  - [安装](zh-cn/start/install)
+  - [快速开发](zh-cn/start/fastDev)
+
+- 后端
+  - [组件](zh-cn/houduan/package)
+
+- 前端
+  - [开发](zh-cn/qianduan/intro)
+
+
+
+
 * [首页](zh-cn/)
-* [指南](zh-cn/guide)
-* [安装](zh-cn/install)
-* [快速开发](zh-cn/fastDev)
+* 
+* [安装](zh-cn/start/install.md)
+* [快速开发](zh-cn/start/fastDev.md)
+
+
+* [鸣谢](zh-cn/thank)
+

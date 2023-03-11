@@ -150,6 +150,9 @@ vendor/bin/phinx migrate
 php vendor/bin/phinx seed:run
 ```
 
+![](https://s3.bmp.ovh/imgs/2023/03/11/041bf76588ec400f.jpg)
+![](https://s3.bmp.ovh/imgs/2023/03/11/8c13f098716758d4.png)
+
 > 当出现异常时请手动检查自己创建的数据库编码集是否跟文件 `database/migrations/20220617101508_init_stone.php` 的`encoding` 与 `collation` 一致
 
 
@@ -172,4 +175,7 @@ npm run dev
 #浏览器打开
 #前端
 http://localhost:2800/
+
+用户名：superAdmin
+密码：admin123
 ```
