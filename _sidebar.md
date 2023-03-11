@@ -13,9 +13,10 @@
   - [开发](zh-cn/qianduan/intro)
 
 
+- 其他
+  - [部署](zh-cn/qita/install)
 
 
-* [首页](zh-cn/)
 * 
 * [安装](zh-cn/start/install.md)
 * [快速开发](zh-cn/start/fastDev.md)
