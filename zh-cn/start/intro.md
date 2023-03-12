@@ -3,6 +3,8 @@
 
  Stone Admin 基于 [Webman](https://www.workerman.net/webman) 框架开发，迁移来自 [MineAdmin](https://v0.mineadmin.com/doc/guide/#%E5%86%85%E7%BD%AE%E5%8A%9F%E8%83%BD) 框架，使用MineAdmin 的0.7.1版本，前端用[SCUI](https://lolicode.gitee.io/scui-doc/)。您可以点击链接前往了解以上的开源项目，感谢开源社区。
 
+名字取至中国古老神话女娲补天的补天石，期待着能提供一组完善的快速成型的后台开发框架，并基于webman的应用插件提供可商用的php软件应用商城。    
+
 > 为何会做这样的事情，hyperf 确实足够强大，但就喜欢 webman 小而美，而兼顾极致的性能。而各种的中间件其实云服务厂商上的支持已经足够丰富，业务为主。（可能个人的认知还有些不足）还有学习的一部分原因在。
 
 # webman是什么

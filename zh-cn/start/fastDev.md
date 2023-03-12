@@ -8,7 +8,7 @@
 > 可以实时预览生成的代码逻辑
 ![](https://s3.bmp.ovh/imgs/2023/03/11/d373c4d90e81b7ac.jpg)
 
-
+![](https://s3.bmp.ovh/imgs/2023/03/12/d6e6b044fc24e359.png)
 
 
 ## 命令行生成
