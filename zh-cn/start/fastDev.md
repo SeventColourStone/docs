@@ -26,5 +26,26 @@ php webman quick:gen:table -t test
 php webman quick:gen:table --table=test 
 ```
 
+> 运行命令行后进入目录
+
+![](https://s3.bmp.ovh/imgs/2023/03/13/784ba2a303a658ad.jpg)
+
+```shell
+cd D:\home\php\plugin\stone\app
+#复制下面的文件到`plugin/stone/app`下，启动`webman`即可直接接口访问
+
+
+
+```
+
+![](https://s3.bmp.ovh/imgs/2023/03/13/e9c9c30436ae8584.jpg)
+
+> 注意：默认所有接口都会存在登录校验，您可以在控制器内数组`$noNeedLogin`设置不需要登录校验直接访问。
+
+![](https://s3.bmp.ovh/imgs/2023/03/13/4670430793e3b290.jpg)
+
+
+>请求接口结果
+![](https://s3.bmp.ovh/imgs/2023/03/13/2c2c5eb8914aa770.jpg)
 
 。。未完待续
