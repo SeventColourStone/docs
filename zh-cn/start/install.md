@@ -22,87 +22,44 @@ npm i
 
 ```
 
-> 修改后端 `.env` 文件配置
+## 后端配置
+> 复制 `.env.templete` 到 `.env` 文件配置
 
 ```shell
-vim ./stoneAdmin/.env
-```
-```shell
-#app相关配置
-#APP_NAME=StoneAdmin
-#APP_ENV=local
-WEB_LISTEN=8788
-WEBSOCKET_LISTEN=3132
-WEBSOCKET_API_LISTEN=3233
-
-#本地db相关配置
-DB_CONNECTION=mysql
-DB_DRIVER =mysql
-DB_HOST=您的数据库链接
-DB_PORT=您的数据库链接端口
-DB_DATABASE=stone
-DB_USERNAME=stone
-DB_PASSWORD=您的数据库密码
-DB_CHARSET = utf8mb4
-DB_COLLATION = utf8mb4_general_ci
-DB_PREFIX = stone_
-
-
-
-#redis相关
-REDIS_HOST=您的redis链接
-REDIS_PASSWORD=您的redis密码
-REDIS_PORT=6379
-REDIS_DB = 1
-REDIS_QUEUE_DB = 14
-
-
-#最高权限人id
-SUPER_ADMIN = 16128263327904
-#角色id
-ADMIN_ROLE = 16128263327905
-
-#代码生成器生成目录
-GENCODE_PATH = D:/home
+ #进入项目源码根目录
+ cp .env.templete .env
 ```
 
-> 修改前端 `.env` 文件配置
+> 按配置的信息启动并创建mysql 数据库 `development_stone_db` & 启动redis服务器 
+
+## 前端配置
+> 复制 `.env.templete` 到 `.env` 文件配置
 
 ```shell
-vim ./stoneAdmin/stone-ui/.env
+ cd stone-ui
+ cp .env.templete .env
 ```
-```shell
-# 基础url
-#VUE_APP_URL=http://127.0.0.1:9501
-VUE_APP_URL=http://127.0.0.1:8788
 
-# 代理API前缀
-VUE_APP_API=/api
-
-# WebSocket url
-VUE_APP_WS_URL=ws://127.0.0.1:3132
-
-VUE_APP_WS_AUTH_URL=/api/plugin/webman/push/auth
-
-```
 
 
 ## 一键初始化后端数据库
 
 修改`phinx.php`文件
-[phinx 官网](https://book.cakephp.org/phinx/0/en/contents.html) 
+[phinx 官网](https://book.cakephp.org/phinx/0/en/contents.html)
 
 ```shell
+
+#配置正确的数据库环境。
 <?php
 
 return
 [
     'paths' => [
-        'migrations' => '%%PHINX_CONFIG_DIR%%/db/migrations',
-        'seeds' => '%%PHINX_CONFIG_DIR%%/db/seeds'
+        "migrations" => "plugin/stone/database/migrations",
+        "seeds"      => "plugin/stone/database/seeds"
     ],
     'environments' => [
-        'default_migration_table' => 'phinxlog',
+        'default_migration_table' => 'phinx_migrations',
         'default_environment' => 'development',
         'production' => [
             'adapter' => 'mysql',
@@ -111,16 +68,16 @@ return
             'user' => 'root',
             'pass' => '',
             'port' => '3306',
-            'charset' => 'utf8',
+            'charset' => 'utf8mb4',
         ],
         'development' => [
             'adapter' => 'mysql',
             'host' => 'localhost',
-            'name' => 'development_db',
+            'name' => 'development_stone_db1',
             'user' => 'root',
-            'pass' => '',
+            'pass' => 'root',
             'port' => '3306',
-            'charset' => 'utf8',
+            'charset' => 'utf8mb4',
         ],
         'testing' => [
             'adapter' => 'mysql',
@@ -129,17 +86,18 @@ return
             'user' => 'root',
             'pass' => '',
             'port' => '3306',
-            'charset' => 'utf8',
+            'charset' => 'utf8mb4',
         ]
     ],
     'version_order' => 'creation'
 ];
 
 
+
 ```
 
 ```shell
-cd ./stoneAdmin
+cd ./stone
 
 #创建数据库
 
