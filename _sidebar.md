@@ -10,7 +10,7 @@
   - [组件](zh-cn/houduan/package)
   - [开发](zh-cn/houduan/dev)
   - [数据库版本管理](zh-cn/houduan/phinx)
-
+  - [连接池](zh-cn/houduan/proxy)
 - 前端
   - [开发](zh-cn/qianduan/dev)
 
